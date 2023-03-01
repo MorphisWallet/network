@@ -21,7 +21,7 @@ specifiers:
   classnames: ^2.3.2
   eslint: 8.35.0
   eslint-config-next: 13.2.3
-  ethers: ^5
+  ethers: ^6.0.0
   joi: ^17.8.3
   mongodb: ^4.13.0
   next: 13.2.3
@@ -47,10 +47,10 @@ dependencies:
   '@noble/hashes': 1.2.0
   '@scure/bip39': 1.1.1
   '@suiet/wallet-kit': 0.1.26_mm4iolharpqnpzrpm75acjue5m
-  '@web3modal/ethereum': 2.1.2_s5q72wmkdehf4mjfxv6ejbfnfa
+  '@web3modal/ethereum': 2.1.2_5s7e5x4ik2td3n3yhoic6hiwue
   '@web3modal/react': 2.1.2_biqbaboplfbrettd7655fr4n2y
   classnames: 2.3.2
-  ethers: 5.7.2
+  ethers: 6.0.8
   joi: registry.npmmirror.com/joi/17.8.3
   mongodb: 4.13.0
   next: 13.2.3_6m24vuloj5ihw4zc5lbsktc4fu
@@ -62,7 +62,7 @@ dependencies:
   react-toastify: 9.1.1_biqbaboplfbrettd7655fr4n2y
   swr: 2.0.4_react@18.2.0
   usehooks-ts: 2.9.1_biqbaboplfbrettd7655fr4n2y
-  wagmi: 0.11.7_q4zmbo2aqke4udxgq4qjy7qxva
+  wagmi: 0.11.7_cjysmdqvxpufnih7f2ednlhyba
 
 devDependencies:
   '@morphis-labs/eslint-config': 1.0.7_gurlcyvajbadyeqka2blpoa6oi
@@ -83,6 +83,10 @@ devDependencies:
   vitest: 0.29.1
 
 packages:
+
+  /@adraffy/ens-normalize/1.8.9:
+    resolution: {integrity: sha512-93OmGCV0vO8+JQ3FHG+gZk/MPHzzMPDRiCiFcCQNTCnHaaxsacO3ScTPGlu2wX2dOtgfalbchPcw1cOYYjHCYQ==}
+    dev: false
 
   /@ampproject/remapping/2.2.0:
     resolution: {integrity: sha512-qRmjj8nj9qmLTQXXmaR1cck3UXSRMPrbsLJAasZpF+t3riI71BXed5ebIOYwQntykeZuhjsdweEc9BxH5Jc26w==}
@@ -3354,6 +3358,10 @@ packages:
     resolution: {integrity: sha512-iR8GBkDt0Q3GyaVcIu7mSsVIqnFbkbRzGLWlvhwunacoLwt4J3swfKhfaM6rN6WY+TBGoYT1GtT1mIh2/jGbRQ==}
     dev: false
 
+  /@noble/hashes/1.1.2:
+    resolution: {integrity: sha512-KYRCASVTv6aeUi1tsF8/vpyR7zpfs3FUzy2Jqm+MU+LmUKhQ0y2FpfwqkCcxSg2ua4GALJd8k2R76WxwZGbQpA==}
+    dev: false
+
   /@noble/hashes/1.2.0:
     resolution: {integrity: sha512-FZfhjEDbT5GRswV3C6uvLPHMiVD6lQBmpoX5+eSiPaMTXte/IKqI5dykDxzZB/WBeK/CDuQRBWarPdi3FNY2zQ==}
     dev: false
@@ -4381,7 +4389,7 @@ packages:
       typescript: 4.9.5
     dev: false
 
-  /@wagmi/connectors/0.2.7_nt3o2yh2m5v74zd4zbgqgeabzm:
+  /@wagmi/connectors/0.2.7_lq5lh7ndwyiewb4y6sywj4m3tu:
     resolution: {integrity: sha512-9l5XBlaO7AGukvIbgLj3L1VMbRvHmwQTu36t0mQRE90LHzqP45/BK9BtrpUI8DjdmIMwQ+omMqSqBuhawT5Zwg==}
     peerDependencies:
       '@wagmi/core': '>=0.9.x'
@@ -4397,12 +4405,12 @@ packages:
       '@ledgerhq/connect-kit-loader': 1.0.2
       '@safe-global/safe-apps-provider': 0.15.2
       '@safe-global/safe-apps-sdk': 7.10.0
-      '@wagmi/core': 0.9.7_xsp3cj3lkgjm3crny2atfvzrye
+      '@wagmi/core': 0.9.7_ae6tjyeltbu3lbvlff7jwldyc4
       '@walletconnect/ethereum-provider': 1.8.0
       '@walletconnect/universal-provider': 2.3.3_ellgaeuoqnti3hful2ny2iugba
       '@web3modal/standalone': 2.1.2_react@18.2.0
       abitype: 0.3.0_typescript@4.9.5
-      ethers: 5.7.2
+      ethers: 6.0.8
       eventemitter3: 4.0.7
       typescript: 4.9.5
     transitivePeerDependencies:
@@ -4421,7 +4429,7 @@ packages:
       - zod
     dev: false
 
-  /@wagmi/core/0.9.7_xsp3cj3lkgjm3crny2atfvzrye:
+  /@wagmi/core/0.9.7_ae6tjyeltbu3lbvlff7jwldyc4:
     resolution: {integrity: sha512-9NYoxpEM+sYAv0Jg3DvMbWTnJguPwiqs61382ATU5dqMsYF1v17ngg6S15gg8oIv9Y7nYrLsiFsQ9qkNYzKlJA==}
     peerDependencies:
       ethers: '>=5.5.1 <6'
@@ -4431,9 +4439,9 @@ packages:
         optional: true
     dependencies:
       '@wagmi/chains': 0.2.9_typescript@4.9.5
-      '@wagmi/connectors': 0.2.7_nt3o2yh2m5v74zd4zbgqgeabzm
+      '@wagmi/connectors': 0.2.7_lq5lh7ndwyiewb4y6sywj4m3tu
       abitype: 0.3.0_typescript@4.9.5
-      ethers: 5.7.2
+      ethers: 6.0.8
       eventemitter3: 4.0.7
       typescript: 4.9.5
       zustand: 4.3.5_react@18.2.0
@@ -4939,14 +4947,14 @@ packages:
       - react
     dev: false
 
-  /@web3modal/ethereum/2.1.2_s5q72wmkdehf4mjfxv6ejbfnfa:
+  /@web3modal/ethereum/2.1.2_5s7e5x4ik2td3n3yhoic6hiwue:
     resolution: {integrity: sha512-fHcOKSR7VpX+O8doO/33/zywEWsRrKg8EwPGik0utgtLs0moT29zvQxxnf80Lwy+OAi6C201nb14oUDmxjSFzQ==}
     peerDependencies:
       '@wagmi/core': '>=0.9'
       ethers: '>=5.7'
     dependencies:
-      '@wagmi/core': 0.9.7_xsp3cj3lkgjm3crny2atfvzrye
-      ethers: 5.7.2
+      '@wagmi/core': 0.9.7_ae6tjyeltbu3lbvlff7jwldyc4
+      ethers: 6.0.8
     dev: false
 
   /@web3modal/react/2.1.2_biqbaboplfbrettd7655fr4n2y:
@@ -5044,6 +5052,10 @@ packages:
 
   /aes-js/3.1.2:
     resolution: {integrity: sha512-e5pEa2kBnBOgR4Y/p20pskXI74UEz7de8ZGVo58asOtvSVG5YAbJeELPZxOmt+Bnz3rX753YKhfIn4X4l1PPRQ==}
+    dev: false
+
+  /aes-js/4.0.0-beta.3:
+    resolution: {integrity: sha512-/xJX0/VTPcbc5xQE2VUP91y1xN8q/rDfhEzLm+vLc3hYvb5+qHCnpJRuFcrKn63zumK/sCwYYzhG8HP78JYSTA==}
     dev: false
 
   /agentkeepalive/4.2.1:
@@ -6642,6 +6654,21 @@ packages:
       '@ethersproject/wallet': 5.7.0
       '@ethersproject/web': 5.7.1
       '@ethersproject/wordlists': 5.7.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+    dev: false
+
+  /ethers/6.0.8:
+    resolution: {integrity: sha512-j5smdMwn4t4vEARcfUv54mTJ2NMCorYLL51wPjFInEnrRr2SF5Sl9a7Z4DXS8UO1fBJVGHnjDDrF1b7msY3f7Q==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@adraffy/ens-normalize': 1.8.9
+      '@noble/hashes': 1.1.2
+      '@noble/secp256k1': 1.7.1
+      aes-js: 4.0.0-beta.3
+      tslib: 2.4.0
+      ws: 8.5.0
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -8679,7 +8706,7 @@ packages:
       '@babel/runtime': 7.21.0
       eventemitter3: 4.0.7
       uuid: 8.3.2
-      ws: 8.12.0_3cxu5zja4e2r5wmvge7mdcljwq
+      ws: 8.12.1_3cxu5zja4e2r5wmvge7mdcljwq
     optionalDependencies:
       bufferutil: 4.0.7
       utf-8-validate: 5.0.10
@@ -9271,6 +9298,10 @@ packages:
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
 
+  /tslib/2.4.0:
+    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: false
+
   /tslib/2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
 
@@ -9606,7 +9637,7 @@ packages:
       - terser
     dev: true
 
-  /wagmi/0.11.7_q4zmbo2aqke4udxgq4qjy7qxva:
+  /wagmi/0.11.7_cjysmdqvxpufnih7f2ednlhyba:
     resolution: {integrity: sha512-IiB1TxTVn+xvjju3ZNQfiwfiB6EZj1h3CO7Zt8q0PEDRN76jqniaeOV7QAnfBgtbqmVh2co4Miaz1rRtvVPMTQ==}
     peerDependencies:
       ethers: '>=5.5.1 <6'
@@ -9619,9 +9650,9 @@ packages:
       '@tanstack/query-sync-storage-persister': 4.24.10
       '@tanstack/react-query': 4.24.10_biqbaboplfbrettd7655fr4n2y
       '@tanstack/react-query-persist-client': 4.24.10_ealzb334a6lsej726khr2zjck4
-      '@wagmi/core': 0.9.7_xsp3cj3lkgjm3crny2atfvzrye
+      '@wagmi/core': 0.9.7_ae6tjyeltbu3lbvlff7jwldyc4
       abitype: 0.3.0_typescript@4.9.5
-      ethers: 5.7.2
+      ethers: 6.0.8
       react: 18.2.0
       typescript: 4.9.5
       use-sync-external-store: 1.2.0_react@18.2.0
@@ -9795,22 +9826,6 @@ packages:
         optional: true
     dev: false
 
-  /ws/8.12.0_3cxu5zja4e2r5wmvge7mdcljwq:
-    resolution: {integrity: sha512-kU62emKIdKVeEIOIKVegvqpXMSTAMLJozpHZaJNDYqBjzlSYXQGviYwN1osDLJ9av68qHd4a2oSjd7yD4pacig==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-    dependencies:
-      bufferutil: 4.0.7
-      utf-8-validate: 5.0.10
-    dev: false
-
   /ws/8.12.1_3cxu5zja4e2r5wmvge7mdcljwq:
     resolution: {integrity: sha512-1qo+M9Ba+xNhPB+YTWUlK6M17brTut5EXbcBaMRN5pH5dFrXz7lzz1ChFSUq3bOUl8yEvSenhHmYUNJxFzdJew==}
     engines: {node: '>=10.0.0'}
@@ -9825,6 +9840,19 @@ packages:
     dependencies:
       bufferutil: 4.0.7
       utf-8-validate: 5.0.10
+    dev: false
+
+  /ws/8.5.0:
+    resolution: {integrity: sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
     dev: false
 
   /xtend/4.0.2:
